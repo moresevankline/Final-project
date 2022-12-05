@@ -20,3 +20,14 @@ class Hospital:
                 + " department and followed by " + Patients_DataBase[i][1] + ", age : "
                 + Patients_DataBase[i][3] + ", from " + Patients_DataBase[i][5] + ", Room Number : "
                 + Patients_DataBase[i][6])
+
+    def hospital_menu():
+        print("")
+        print("                -------------------------------------------")
+        print("                | 1. To view hospital's departments       |")
+        print("                | 2. To view hospital's doctors           |")
+        print("                | 3. To view patients' residents          |")
+        print("                | 4. To view patient's details            |")
+        print("                | To Exit Enter B                         |")
+        print("                -------------------------------------------")
+        print("")
