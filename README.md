@@ -2,14 +2,16 @@
 
 Hospital management system is a system where you can manage the patient's information as well as doctor's information. You can also use this system to view hospital details.
 
-# Mode
+# Built by:
+  - Python
 
-# Admin Mode
+# Mode
+## Admin Mode
   - Use Admin as username and 1234 as password to access Admin Mode
   - Can add, delete, edit, and view patients information
   - Can add, delete, edit, and view doctors information
   
-# User Mode
+## User Mode
   - Can view the departments, doctors, residents, and patients in the hospital
   
 # Classes
