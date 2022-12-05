@@ -1,4 +1,4 @@
-# # Hospital Management System
+# Hospital Management System
 
 Hospital management system is a system where you can manage the patient's information as well as doctor's information. You can also use this system to view hospital details.
 
