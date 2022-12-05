@@ -19,7 +19,7 @@ Hospital management system is a system where you can manage the patient's inform
   - Patient
   - Read_Hospital_Excel_Sheet
   - Write_Hospital_Excel_Sheet
-  - 
+   
 # Methods
   - add_patient()
   - display_patient()
@@ -39,8 +39,8 @@ Hospital management system is a system where you can manage the patient's inform
   - Write_Patients_DataBase()
   - Write_Doctors_DataBase()
   
-Developed by :
-  Jeconiah F. Canatuan
-  Kim Emanuel B. Candor
-  Evan Kline F. Mores
-  Jhon Paul Joe C. Novida
+# Developed by :
+  - Jeconiah F. Canatuan
+  - Kim Emanuel B. Candor
+  - Evan Kline F. Mores
+  - Jhon Paul Joe C. Novida
