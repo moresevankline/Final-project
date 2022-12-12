@@ -30,7 +30,7 @@
 * If either the administrator or the user enters an invalid value, the console will detect the error and prompt the administrator or user to try again.
 
 ## Unified Modeling Language (UML)
-![uml](https://github.com/JeconiahCanatuan/Final-project/blob/canatuan/img/HospitalManagementSystemUML.png?raw=true))
+![uml](https://github.com/JeconiahCanatuan/Final-project/blob/canatuan/img/HospitalManagementSystemUML.png)
 
 ## Video Presentation
 [![Python-FinalProject])
