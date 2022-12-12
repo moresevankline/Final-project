@@ -13,13 +13,12 @@ class Hospital:
         for i in Doctors_DataBase:
             print (" " + Doctors_DataBase[i][0][1] + " in " + Doctors_DataBase[i][0][0] + 
                     " department, from " + Doctors_DataBase[i][0][2])
-    
+
     def hospital_residents():
         for i in Patients_DataBase:
             print("Patient : " + Patients_DataBase[i][2] + " in " + Patients_DataBase[i][0]
                 + " department and followed by " + Patients_DataBase[i][1] + ", age : "
-                + Patients_DataBase[i][3] + ", from " + Patients_DataBase[i][5] + ", Room Number : "
-                + Patients_DataBase[i][6])
+                + Patients_DataBase[i][3] + ", from " + Patients_DataBase[i][5])
 
     def hospital_menu():
         print("")
