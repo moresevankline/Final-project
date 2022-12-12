@@ -45,7 +45,7 @@
 |Originality|3|Concept is quite similar to some samples.|
 |Overall Impression|3|Minimal to no bugs or error found during presentation. The overall quality and creativity are good.|
 ## Contributors
-      1. canatuan, Jeconiah
+      1. Canatuan, Jeconiah
       2. Candor, Kim Emmanuel
       3. Mores, Evan Kline
       4. Novida, Jhon Paul Joe
