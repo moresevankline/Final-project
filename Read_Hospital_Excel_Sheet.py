@@ -1,6 +1,6 @@
 def Read_Patients_DataBase() :
 
-	myfile = open("Patients_DataBase.csv","r")
+	myfile = open("Patients_DataBase.txt","r")
 
 	Patients_Dict = dict()
 	Patient_ID = ""
@@ -9,8 +9,7 @@ def Read_Patients_DataBase() :
 	Patient_Name = ""
 	Patient_Age = ""
 	Patient_Gender = ""
-	Patient_Address = ""
-	RoomNumber = ""
+	Patient_City = ""
 	flag = 0
 	text = myfile.read()
 		
@@ -52,44 +51,33 @@ def Read_Patients_DataBase() :
 							flag = 6
 							
 		elif flag == 6 :
-						if i != ";" :
-							Patient_Address = Patient_Address + i
-						elif i == ";" :
-							flag = 7
-							
-		elif flag == 7 :
 						if i != "\n" :
-							RoomNumber = RoomNumber + i
+							Patient_City = Patient_City + i
 						elif i == "\n" :
-							Patients_Dict[int(Patient_ID)]=[Department,Doctor_Name,Patient_Name,Patient_Age,Patient_Gender,Patient_Address,RoomNumber]
+							Patients_Dict[int(Patient_ID)]=[Department,Doctor_Name,Patient_Name,Patient_Age,Patient_Gender,Patient_City]
 							Patient_ID = ""
 							Department = ""
 							Doctor_Name = ""
 							Patient_Name = ""
 							Patient_Age = ""
 							Patient_Gender = ""
-							Patient_Address = ""
-							RoomNumber = ""
+							Patient_City = ""
 							flag = 0
 							
 		
 	myfile.close()
 	return Patients_Dict
 			
-			
-			
 def Read_Doctors_DataBase () :
 
-	myfile = open ("Doctors_DataBase.csv","r")
+	myfile = open ("Doctors_DataBase.txt","r")
 
 	Doctors_Dict = dict()
 	Doctor_ID = ""
 	Department = ""
 	Doctor_Name = ""
-	Doctor_Address = ""
+	Doctor_City = ""
 	Patient_ID = ""
-	Session_Start = ""
-	Session_End = ""
 	flag = 0
 
 	
@@ -119,10 +107,10 @@ def Read_Doctors_DataBase () :
 				
 		elif flag == 3 :
 					if i != ";" :
-						Doctor_Address = Doctor_Address + i
+						Doctor_City = Doctor_City + i
 					elif i == ";" :
 						flag = 4
-						Doctor_Data_List = [Department,Doctor_Name,Doctor_Address]
+						Doctor_Data_List = [Department,Doctor_Name,Doctor_City]
 						Doctors_Dict[int(Doctor_ID)]=[Doctor_Data_List]
 						
 		elif flag == 4 :
@@ -135,30 +123,8 @@ def Read_Doctors_DataBase () :
 						Doctor_ID = ""
 						Department = ""
 						Doctor_Name = ""
-						Doctor_Address = ""
-						
-		elif flag == 5 :
-					if i != ";" :
-						Session_Start = Session_Start + i
-					elif i == ";" :
-						flag = 6
-		
-		elif flag == 6 :
-					if i != ";" and i != "\n" :
-						Session_End = Session_End + i
-					elif i == ";" :
-						flag = 4
-						Appointment_List = [int(Patient_ID),Session_Start,Session_End]	
-						Doctors_Dict[int(Doctor_ID)].append(Appointment_List)
-						Patient_ID = ""
-						Session_Start = ""
-						Session_End = ""
-					elif i == "\n" :
-						flag = 0
-						Doctor_ID = ""
-						Department = ""
-						Doctor_Name = ""
-						Doctor_Address = ""
+						Doctor_City = ""
 
 	myfile.close()
 	return Doctors_Dict
+
