@@ -32,8 +32,7 @@
 ## Unified Modeling Language (UML)
 ![uml](https://github.com/JeconiahCanatuan/Final-project/blob/canatuan/img/HospitalManagementSystemUML.png)
 
-## Video Presentation
-[![Python-FinalProject])
+## [Video Presentation](https://www.youtube.com/watch?v=oTjHTo1BVyo)
 
 ## Self-Assessment
 |Metric| Score| Description|
